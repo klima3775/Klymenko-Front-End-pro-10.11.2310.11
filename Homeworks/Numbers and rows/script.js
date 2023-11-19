@@ -15,8 +15,23 @@ console.log("Результат виконання конкатенації:" + 
 //Завдання 2 
 
 // отримання числа від користувача
-const number = prompt("Введіть п'ятизначне число:");
 
-// розбиття чисел на пробіли методами розбиття split та об'єднання за допомогою join
-const resultDigits = number.split('').join(' ');
-console.log("Результат розбиття за цифрами: " + resultDigits);
+let number =  prompt("Введіть п'ятизначне число:");
+
+// Отримуємо окремі цифри
+let digit_1 = Math.floor(number / 10000);
+number %= 10000;
+
+let digit_2 = Math.floor(number / 1000);
+number %= 1000;
+
+let digit_3 = Math.floor(number / 100);
+number %= 100;
+
+let digit_4 = Math.floor(number / 10);
+number %= 10;
+
+let digit_5 = number;
+
+// Виводимо цифри у вихідному порядку через пробіл
+console.log(digit_1, digit_2, digit_3, digit_4, digit_5);
