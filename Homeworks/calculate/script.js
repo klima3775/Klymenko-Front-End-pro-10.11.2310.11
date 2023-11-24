@@ -5,17 +5,23 @@ let result;
 
     switch (answerActions) {
         case "add":
-            alert(result = answerOneNumber + answerTwoNumber);
+            result = answerOneNumber + answerTwoNumber;
+            alert(`${answerOneNumber} + ${answerTwoNumber} = ${result}`);
             break;
         case "sub":
-            alert(result = answerOneNumber - answerTwoNumber);
+            result = answerOneNumber - answerTwoNumber;
+            alert(`${answerOneNumber} - ${answerTwoNumber} = ${result}`);
             break;
         case "mult":
-            alert(result = answerOneNumber * answerTwoNumber);
+            result = answerOneNumber * answerTwoNumber;
+            alert(`${answerOneNumber} * ${answerTwoNumber} = ${result}`);
             break;
         case "div":
-            alert(result = answerOneNumber / answerTwoNumber);
+            result = answerOneNumber / answerTwoNumber;
+            alert(`${answerOneNumber} / ${answerTwoNumber} = ${result}`);
             break;
         default:
             alert("Будь ласка оберіть операцію");
     }
+
+
