@@ -79,3 +79,46 @@ for(let i = 100; i <= 200; i++){
 }
 
 //Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
+
+const getNum = 70;
+
+for(let i = 1; i <= getNum; i++){
+    if(getNum % i === 0){
+        console.log(`дільники числа 70: ${i}`);
+    }   
+}
+
+//Визначити кількість його парних дільників.
+
+let number = 70;
+let count1 = 0;
+
+for (let i = 1; i <= number; i++) {
+  if (number % i === 0 && i % 2 === 0) {
+    count1++;
+  }
+}
+
+console.log(`Кількість парних дільників числа ${number}: ${count1}`);
+
+//Знайти суму його парних дільників.
+
+let number1 = 70;
+let sum4 = 0;
+
+for (let i = 1; i <= number1; i++) {
+    if (number1 % i === 0 && i % 2 === 0) {
+      sum4 += i;
+    }
+}
+  console.log(`Сума парних дільників числа ${number1}: ${sum4}`);
+
+//   Надрукувати повну таблицю множення від 1 до 10.
+
+for (let i = 1; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
+      console.log(`${i} * ${j} = ${i * j}`);
+    }
+    console.log(); 
+  }
+  
