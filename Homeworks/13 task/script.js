@@ -2,17 +2,17 @@ const array = [16,-37,54,-4,72,-56,47,4,-16,25,-37,46,4,-51,27,-63,4,-54,76,-4,1
 
 //Знайти суму та кількість позитивних елементів.
 
-const PositiveNumbers = [];
+const positiveNumbers = [];
 
 for(let i = 0; i <= array.length; i++){
     if(array[i] > 0){
-        PositiveNumbers.push(array[i]);
+        positiveNumbers.push(array[i]);
     }
 }
 
-console.log(`"Позитивні елементи масиву: ${PositiveNumbers}`);
+console.log(`"Позитивні елементи масиву: ${positiveNumbers}`);
 
-const sumElements = PositiveNumbers.reduce(function(accumulator, currentValue){
+const sumElements = positiveNumbers.reduce(function(accumulator, currentValue){
     return accumulator + currentValue;
 },0);
 
@@ -71,22 +71,22 @@ console.log(`Кількість негативних елементів: ${Negat
 
 //Знайти кількість непарних позитивних елементів.
 
-let oddPositiveNumbers = [];
+let OddpositiveNumbers = [];
 
-for (let i = 0; i < PositiveNumbers.length; i++) {
-    if (PositiveNumbers[i] > 0 && PositiveNumbers[i] % 2 !== 0) {
-        oddPositiveNumbers.push(PositiveNumbers[i]);
+for (let i = 0; i < positiveNumbers.length; i++) {
+    if (positiveNumbers[i] > 0 && positiveNumbers[i] % 2 !== 0) {
+        OddpositiveNumbers.push(positiveNumbers[i]);
     }
 }
 
-console.log(`Непарні позитивні елементи: ${oddPositiveNumbers.join(', ')}`);
+console.log(`Непарні позитивні елементи: ${OddpositiveNumbers.join(', ')}`);
 
-var oddPositiveCount = 0;
+let oddPositiveCount = 0;
 
 
-for (var i = 0; i < PositiveNumbers.length; i++) {
+for (let  i = 0; i < positiveNumbers.length; i++) {
    
-    if (PositiveNumbers[i] > 0 && PositiveNumbers[i] % 2 !== 0) {
+    if (positiveNumbers[i] > 0 && positiveNumbers[i] % 2 !== 0) {
        
         oddPositiveCount++;
     }
@@ -97,7 +97,7 @@ console.log("Кількість непарних позитивних елеме
 
 //Знайти кількість парних позитивних елементів.
 
-let evenPositiveElements = PositiveNumbers.reduce(function(accumulator, currentValue){
+let evenPositiveElements = positiveNumbers.reduce(function(accumulator, currentValue){
     if(currentValue > 0 && currentValue % 2 === 0) {
         accumulator++;
     }
@@ -108,7 +108,7 @@ console.log("Кількість парних позитивних елемент
 
 //Знайти суму парних позитивних елементів.
 
-let sumEvenPositive = PositiveNumbers.reduce(function(accumulator, currentValue){
+let sumEvenPositive = positiveNumbers.reduce(function(accumulator, currentValue){
     if(currentValue > 0 && currentValue % 2 === 0){
         accumulator += currentValue;
     }
@@ -119,7 +119,7 @@ console.log("Сума парних позитивних елементів:", su
 
 //Знайти суму непарних позитивних елементів.
 
-let sumOddPositive = PositiveNumbers.reduce(function(accumulator, currentValue){
+let sumOddPositive = positiveNumbers.reduce(function(accumulator, currentValue){
     if(currentValue > 0 && currentValue % 2 === 0){
         accumulator += currentValue;
     }
@@ -128,7 +128,7 @@ let sumOddPositive = PositiveNumbers.reduce(function(accumulator, currentValue){
 
 console.log("Сума парних позитивних елементів:", sumEvenPositive);
 
-//Знайти добуток позитивних елементів.
+//Знайти добуток позитивних елементів.а
 
 let productPositive = array.reduce(function(accumulator,currentValue){
     if(currentValue > 0) {
