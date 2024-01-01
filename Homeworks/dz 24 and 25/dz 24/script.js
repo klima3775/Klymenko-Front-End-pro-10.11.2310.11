@@ -12,10 +12,6 @@ class Student {
     this.grades.push(grade);
   }
 
-  calculateAge(currentYear) {
-    return currentYear - this.birthYear;
-  }
-
   present() {
     if (this.attendanceCount < 25) {
       this.attendance[this.attendanceCount] = true;
