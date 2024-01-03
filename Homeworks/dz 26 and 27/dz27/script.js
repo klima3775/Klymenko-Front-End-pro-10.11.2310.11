@@ -4,8 +4,10 @@ let codes = {
   1: "США",
 };
 
-for (let code in codes) {
-  if (codes.hasOwnProperty.call(codes, code)) {
-    console.log(`Код ${code}: ${codes[code]}`);
-  }
-}
+let orders = ["6", "38", "1"];
+
+orders.forEach(function (code) {
+  console.log(`${code}: ${codes[code]}`);
+});
+
+//Я згадав яка була задача. Виправив з використанням масиву
