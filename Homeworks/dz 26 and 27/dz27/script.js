@@ -1,13 +1,9 @@
-let codes = {
-  6: "Польща",
-  38: "Україна",
-  1: "США",
-};
+let codes = new Map([
+  ["6", "Польща"],
+  ["38", "Україна"],
+  ["1", "США"],
+]);
 
-let orders = ["6", "38", "1"];
-
-orders.forEach(function (code) {
-  console.log(`${code}: ${codes[code]}`);
+codes.forEach((name, code) => {
+  console.log(`${code}: ${name}`);
 });
-
-//Я згадав яка була задача. Виправив з використанням масиву
