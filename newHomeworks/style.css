@@ -1,0 +1,19 @@
+Ваші стилі для блоку відгуків #testimonials {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+}
