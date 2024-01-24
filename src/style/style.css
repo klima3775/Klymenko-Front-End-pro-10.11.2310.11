@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  padding: 100px 0;
+}
+.smile {
+  display: flex;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 5px;
+}
