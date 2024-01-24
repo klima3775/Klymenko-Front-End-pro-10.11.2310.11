@@ -1,4 +1,4 @@
-const emoji = ["😬", "🥶", "🙈", "🧠", "🤠", "🤠"];
+const emoji = ["😬", "🥶", "🙈", "🧠", "🤠"];
 const votes = new Array(emoji.length).fill(0);
 
 const divSmile = document.getElementById("container");
