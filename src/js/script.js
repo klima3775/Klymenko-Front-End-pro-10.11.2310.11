@@ -36,9 +36,9 @@ function renderProductsList(products) {
   document.getElementById("products").style.display = "block";
   document.getElementById("categories").style.display = "none";
 
-  // Видаляємо обробник події з кнопки "Купити", якщо він вже доданий
+  // Видаляємо обробник події з кнопки Купити, якщо він вже доданий
   buyButton.removeEventListener("click", buyProduct);
-  // Додаємо новий обробник події для кнопки "Купити"
+  // Додаємо новий обробник події для кнопки Купити
   buyButton.addEventListener("click", buyProduct);
 }
 
