@@ -55,3 +55,8 @@ button:disabled {
   background-color: #ddd;
   cursor: not-allowed;
 }
+
+/* Доданий стиль для приховання блоку "Товари" */
+#products {
+  display: none;
+}
