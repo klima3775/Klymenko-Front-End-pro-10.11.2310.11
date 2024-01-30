@@ -45,7 +45,7 @@ function renderProductsList(products) {
     const listItem = document.createElement("li");
     listItem.textContent = product;
     listItem.classList.add("product");
-    listItem.dataset.image = images[product]; // Додано атрибут data-image
+    listItem.dataset.image = images[product];
     listItem.addEventListener("click", () => selectProduct(product));
     productList.appendChild(listItem);
   });
