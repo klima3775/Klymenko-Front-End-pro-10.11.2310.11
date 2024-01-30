@@ -57,7 +57,10 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Доданий стиль для приховання блоку Товари */
 #products {
-  display: none;
+  display: none;/* Початково ховаємо розділ продукти */
+}
+#product-image {
+  width: 250px;
+  display: none; /* Початково ховаємо зображення */
 }
