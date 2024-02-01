@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ 36. Promise</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <h1>Post Search</h1>
+    <label for="postId">Enter Post ID (1-100): </label>
+    <input type="number" id="postId" min="1" max="100" required />
+    <button id="searchButton">Search Post</button>
+
+    <div id="postContainer" style="display: none">
+      <h2>Post Details</h2>
+      <div id="postContent"></div>
+      <button id="commentsButton">Get Comments</button>
+      <div id="commentsContainer"></div>
+    </div>
+
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>
