@@ -9,7 +9,8 @@ body {
 
 #categories,
 #products,
-#product-info {
+#product-info,
+#orders {
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
@@ -48,19 +49,16 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #20c01a;
-}
-
 button:disabled {
   background-color: #ddd;
   cursor: not-allowed;
 }
 
 #products {
-  display: none;/* Початково ховаємо розділ продукти */
+  display: none;
 }
+
 #product-image {
   width: 250px;
-  display: none; /* Початково ховаємо зображення */
+  display: none;
 }
