@@ -73,19 +73,19 @@ document.addEventListener("DOMContentLoaded", function () {
   function renderProductsList(products) {
     productsList.innerHTML = "";
     products.forEach((product) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = product.name;
-      listItem.classList.add("product");
-      listItem.dataset.image = images[product.name];
-      listItem.dataset.price = product.price;
-      listItem.addEventListener("click", () =>
-        selectProduct(listItem, product)
+      const productDiv = document.createElement("div");
+      productDiv.innerHTML = `<div class="product" data-image="${
+        images[product.name]
+      }" data-price="${product.price}">${product.name}</div>`;
+      productDiv.addEventListener("click", () =>
+        selectProduct(productDiv, product)
       );
-      productsList.appendChild(listItem);
+      productsList.appendChild(productDiv);
     });
     document.getElementById("products").style.display = "block";
     document.getElementById("categories").style.display = "none";
   }
+
   // Вибір продукту
   function selectProduct(item, product) {
     clearSelectedItems(productsList);
