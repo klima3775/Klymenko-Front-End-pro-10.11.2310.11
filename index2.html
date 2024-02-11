@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper_forms">
+      <div class="forms">
+        <form id="forms">
+          <input placeholder="Ваше Піб" />
+          <select id="city" required>
+            <option value="">Оберіть місто</option>
+            <option value="Київ">Київ</option>
+            <option value="Харків">Харків</option>
+            <option value="Дніпро">Львів</option>
+          </select>
+          <input
+            type="text"
+            id="nova-poshta-branch"
+            required
+            placeholder="Відділення Нової пошти"
+          />
+          <select id="payment-method" required>
+            <option value="">Оберіть спосіб оплати</option>
+            <option value="Післяплата">Післяплата</option>
+            <option value="Оплата банківською карткою">
+              Оплата банківською карткою
+            </option>
+          </select>
+          <input
+            type="number"
+            id="quantity"
+            min="1"
+            placeholder="Кількість:"
+            required
+          />
+          <textarea id="comment" placeholder="Коментарі"></textarea>
+          <button type="submit">Підтвердити замовлення</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
