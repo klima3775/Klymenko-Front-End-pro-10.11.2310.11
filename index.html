@@ -15,10 +15,6 @@
       <h2>Товари</h2>
       <ul id="products-list"></ul>
     </div>
-    <!-- <div id="order-formx"> продовжити після тесту 
-
-    </div> -->
-
     <div id="product-info">
       <h2>Інформація про товар</h2>
       <img id="product-image" src="" alt="товар не знайдено" />
@@ -26,6 +22,41 @@
       <button id="buy-button" class="buy-product-button" disabled>
         Купити
       </button>
+      <!-- -------------Форма--------------------------------------- -->
+      <!-- <div class="forms">
+        <form id="forms">
+          <input placeholder="Ваше Піб" type="text" id="name" required />
+          <select id="city" required>
+            <option value="">Оберіть місто</option>
+            <option value="Київ">Київ</option>
+            <option value="Харків">Харків</option>
+            <option value="Дніпро">Львів</option>
+          </select>
+          <input
+            type="text"
+            id="post-office"
+            required
+            placeholder="Відділення Нової пошти"
+          />
+          <select id="payment-method" required>
+            <option value="">Оберіть спосіб оплати</option>
+            <option value="Післяплата">Післяплата</option>
+            <option value="Оплата банківською карткою">
+              Оплата банківською карткою
+            </option>
+          </select>
+          <input
+            type="number"
+            id="quantity"
+            min="1"
+            placeholder="Кількість:"
+            required
+          />
+          <textarea id="comment" placeholder="Коментарі"></textarea>
+          <button type="submit">Підтвердити замовлення</button>
+        </form>
+      </div> -->
+<!-- -------------Форма--------------------------------------- -->
        <div class="pop_up">
       <div class="pop_up_containers">
         <div class="pop_up_body">
@@ -42,7 +73,7 @@
       <ul id="ordersList"></ul>
     </div>
 
-    <script src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/script.js"></script>
   </body>
 </html>
 <!--  Форма готова в інщій гілці.
