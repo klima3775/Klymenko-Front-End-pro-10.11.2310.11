@@ -95,9 +95,3 @@ button:disabled {
 .pop_up.active {
   display: block;
 }
-
-/* стиль для появи форми */
-/* #forms.active {
-  display: block;
-} */
-/* Стилі для форми  Взяти в інщій гілці*/
