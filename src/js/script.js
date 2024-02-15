@@ -2,13 +2,14 @@ const divBrowserInfo = document.getElementById("browserInfo");
 const browserInfo = {
   name: navigator.userAgent,
   version: navigator.appVersion,
-
+  language: navigator.language,
   platform: navigator.platform,
 };
 divBrowserInfo.innerHTML = `
 <p>Назва браузеру: ${browserInfo.name}</p>
 <p>Версія браузеру: ${browserInfo.version}</p>
 <p>Платформа користувача: ${browserInfo.platform}</p>
+<p>Мова Браузера: ${browserInfo.language}</p>
 `;
 
 function getUrlParams() {
@@ -16,7 +17,6 @@ function getUrlParams() {
   return Array.from(urlParams.keys());
 }
 
-// Функція для встановлення стану прапорців на основі параметрів URL
 function setCheckboxState() {
   const urlParams = getUrlParams();
   urlParams.forEach((param) => {
