@@ -62,36 +62,56 @@ button:disabled {
   width: 250px;
   display: none;
 }
-.pop_up {
+.popup-form {
   display: none;
-  width: 100%;
-  height: 100%;
   position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.pop_up_containers {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.pop_up_body {
-  margin: auto;
-  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 100px 15px 110px 15px;
-  position: relative;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
-.pop_up_close {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 21px;
-  cursor: pointer;
+#forms {
+  width: 300px; /* Змініть ширину форми на ваш вибір */
+  margin: 0 auto; /* Вирівняти форму по центру */
 }
-.pop_up.active {
-  display: block;
+
+/* Стилі для входу ПІБ */
+#forms input[type="text"],
+#forms input[type="number"],
+#forms textarea,
+#forms select {
+  width: 100%; /* Займати всю доступну ширину */
+  margin-bottom: 10px; /* Додати проміжок між елементами */
+  padding: 5px; /* Додати відступи */
+  box-sizing: border-box; /* Зберігати ширину і висоту елемента, включаючи падіння та кордон */
+}
+
+/* Стилі для кнопки */
+#forms button[type="submit"] {
+  width: 100%; /* Займати всю доступну ширину */
+  padding: 10px; /* Додати відступи */
+  background-color: #007bff; /* Змініть колір фону на ваш вибір */
+  color: #fff; /* Змініть колір тексту на ваш вибір */
+  border: none; /* Видалити рамку */
+  cursor: pointer; /* Змінити курсор на покажчик при наведенні */
+}
+
+/* Стилі для кнопки при наведенні */
+#forms button[type="submit"]:hover {
+  background-color: #0056b3; /* Змініть колір фону при наведенні на ваш вибір */
+}
+#order-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+  display: none;
 }
