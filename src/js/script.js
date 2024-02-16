@@ -148,12 +148,19 @@ document.addEventListener("DOMContentLoaded", function () {
     <p><strong>Спосіб оплати:</strong> ${payment}</p>
     <p><strong>Кількість товару:</strong> ${quantity}</p>
     <p><strong>Коментар:</strong> ${comment}</p>
+    <button id="checkInfo">ok</button>
   `;
     orderInfoForm.innerHTML = `
     <h2>Інформація про замовлення</h2>
     ${orderDetails}
   `;
     popupForm.style.display = "none";
+    const closeInfo = document.getElementById("checkInfo");
+    closeInfo.addEventListener("click", () => {
+      orderInfoForm.style.display = "none";
+      location.reload(); // Оновлюємо сторінку після натискання на кнопку "ok"
+    });
+
     showOrderInfo();
   });
 
@@ -161,13 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
     orderInfoForm.style.display = "block";
     document.body.style.overflow = "hidden"; // Щоб заборонити прокручування сторінки під час відображення вспливаючого вікна
   }
-
-  // Закриття вспливаючого вікна з інформацією про замовлення
-  document.getElementById("close-order-info").addEventListener("click", () => {
-    orderInfoForm.style.display = "none";
-    document.body.style.overflow = "auto"; // Відновлення можливості прокрутки сторінки
-    location.reload(); // Оновлення сторінки
-  });
 
   function showOrders() {
     ordersList.innerHTML = "";
