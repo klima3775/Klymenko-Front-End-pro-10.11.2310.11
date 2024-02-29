@@ -1,12 +1,13 @@
-const images = document.querySelectorAll(".slider .slider__item img");
+const images = document.querySelectorAll("img");
 const sliderItem = document.querySelector(".slider__item");
+const sliderNext = document.querySelector(".slider-next");
+const sliderBack = document.querySelector(".slider-back");
 
 let count = 0;
 let width;
 
 // розрахунок розмірів слайдера
 function init() {
-  console.log("resize");
   width = document.querySelector(".slider").offsetWidth;
   sliderItem.style.width = width * images.length + "px";
   images.forEach((item) => {
@@ -14,27 +15,39 @@ function init() {
     item.style.height = "auto";
   });
   scrollSlider();
+  // checkButton();// якщо треба ховати кнопки на початку
 }
 
 window.addEventListener("resize", init);
 init();
 
-//слайдер вперед
-document.querySelector(".slider-next").addEventListener("click", function () {
+// //слайдер вперед
+sliderNext.addEventListener("click", function () {
   count++;
   if (count >= images.length) {
+    count = 0;
   }
   scrollSlider();
+  checkButton();
 });
 //слайдер назад
-document.querySelector(".slider-back").addEventListener("click", function () {
+sliderBack.addEventListener("click", function () {
   count--;
   if (count < 0) {
     count = images.length - 1;
   }
   scrollSlider();
+  checkButton();
 });
 
+//анімація слайдера
 function scrollSlider() {
   sliderItem.style.transform = "translate(-" + count * width + "px)";
+}
+
+//перевірка кнопок
+function checkButton() {
+  sliderBack.style.visibility = count === 0 ? "hidden" : "visible";
+  sliderNext.style.visibility =
+    count === images.length - 1 ? "hidden" : "visible";
 }
