@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+}
+
+html,
+body {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 30px auto;
+  background: grey;
+  padding: 20px;
+}
+
+button {
+  background: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.8em;
+}
+
+button:hover {
+  background: orangered;
+}
+
+button:active {
+  background: #000;
+  color: #fff;
+}
+
+.slider {
+  border: 2px solid #000;
+  max-width: 1000px;
+  max-height: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+img {
+  max-width: 1050px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.slider__item {
+  display: flex;
+  transition: all ease 1s;
+}
