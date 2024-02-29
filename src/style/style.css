@@ -5,11 +5,11 @@
 html,
 body {
   font-size: 18px;
-  margin: 0px;
+  background-color: bisque;
 }
 
 .container {
-  max-width: 100%;
+  max-width: 80%;
   margin: 30px auto;
   background: grey;
   padding: 20px;
