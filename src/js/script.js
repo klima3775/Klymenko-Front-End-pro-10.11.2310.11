@@ -15,7 +15,7 @@ function init() {
     item.style.height = "auto";
   });
   scrollSlider();
-  // checkButton();// якщо треба ховати кнопки на початку
+  checkButton();
 }
 
 window.addEventListener("resize", init);
