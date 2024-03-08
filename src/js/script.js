@@ -3,7 +3,6 @@ function redirectToSite() {
 
   // Перевірка, чи введено http:// або https://
   if (!inputUrl.startsWith("http://") && !inputUrl.startsWith("https://")) {
-    // Додавання протоколу за замовчуванням (https://)
     inputUrl = "https://" + inputUrl;
   }
 
