@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet Shop</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div id="categories">
+      <h2>Категорії</h2>
+      <ul id="category-list"></ul>
+    </div>
+    <div id="products">
+      <h2>Товари</h2>
+      <ul id="products-list"></ul>
+    </div>
+    <div id="product-info">
+      <h2>Інформація про товар</h2>
+      <img id="product-image" src="" alt="товар не знайдено" />
+      <p id="product-description"></p>
+      <button id="buy-button" class="buy-product-button" disabled>
+        Купити
+      </button>
+      <div class="popup-form" id="popup-form">
+        <h2>Заповніть форму</h2>
+        <form id="forms">
+          <input placeholder="Ваше ПІБ" type="text" id="name" required />
+          <select id="city" required>
+            <option value="">Оберіть місто</option>
+            <option value="Київ">Київ</option>
+            <option value="Харків">Харків</option>
+            <option value="Львів">Львів</option>
+          </select>
+          <input
+            type="text"
+            id="post-office"
+            required
+            placeholder="Відділення Нової пошти"
+          />
+          <select id="payment-method" required>
+            <option value="">Оберіть спосіб оплати</option>
+            <option value="Післяплата">Післяплата</option>
+            <option value="Оплата банківською карткою">
+              Оплата банківською карткою
+            </option>
+          </select>
+          <input
+            type="number"
+            id="quantity"
+            min="1"
+            placeholder="Кількість:"
+            required
+          />
+          <textarea id="comment" placeholder="Коментарі"></textarea>
+          <button type="submit">Підтвердити замовлення</button>
+        </form>
+      </div>
+      <div id="order-info"></div>
+      <button id="watch-orders">Мої Замовлення</button>
+    </div>
+    <div id="orders" style="display: none">
+      <h2>Мої Замовлення</h2>
+      <ul id="ordersList"></ul>
+    </div>
+
+    <script type="module" src="./js/app.min.js"></script>
+  </body>
+</html>

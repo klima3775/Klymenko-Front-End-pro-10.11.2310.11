@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: aqua;
+}
+
+#categories,
+#products,
+#product-info,
+#orders {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li,
+.product {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #ab1e1e;
+  border: 1px solid #20c01a;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px;
+  background-color: #20c01a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+}
+
+#products,
+#product-image,
+.popup-form,
+#order-info {
+  display: none;
+}
+
+#product-image {
+  width: 250px;
+}
+
+.popup-form,
+#order-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+#forms {
+  width: 300px;
+  margin: 0 auto;
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+#order-info {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
